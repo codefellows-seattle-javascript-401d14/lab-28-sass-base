@@ -37,7 +37,7 @@ Your lab directory must include
 * Write at least 2 `@mixin`s
 * Write a for loop when creating your h1 - h6 ratios :)
 * Make variables for the color scheme of your app 
- * **NEVER HARD CODE COLORS ONLY USE VARIABLES**
+ * **NEVER HARD CODE COLORS IN YOUR STYLES, ONLY USE VARIABLES**
 * Make a variable for the padding in your app
 * Write a reset useing the `*` selector
  * clear padding and margins
