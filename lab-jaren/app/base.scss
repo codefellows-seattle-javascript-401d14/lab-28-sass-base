@@ -1,0 +1,100 @@
+$brand-black: #000;
+$brand-white: #fff;
+$brand-blue: #004358;
+$brand-turq: #1f8a70;
+$brand-green: #bedb39;
+$brand-yellow: #ffe11a;
+$brand-orange: #fd7400;
+$pad: 1em;
+
+@mixin horizontal-center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+@mixin magic-bubble {
+  box-sizing: border-box;
+  padding: $pad;
+  border-radius: 0.5em;
+}
+
+// reset
+* {
+  position: static;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-size: 2vw;
+  font-weight: normal;
+  line-height: 1em;
+  text-decoration: none;
+  color: $brand-black;
+  &:focus {
+    outline: 0;
+  }
+}
+
+html, body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background-color: $brand-green;
+  height: auto;
+  padding: $pad * 4;
+}
+
+@for $i from 6 through 1 {
+  h#{$i} {
+    @include horizontal-center;
+    color: $brand-blue;
+    font-size: (7 - $i) * 1.1em;
+  }
+}
+
+p {
+  color: $brand-blue;
+  margin-bottom: $pad;
+  margin-top: $pad;
+}
+
+a {
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+  &:hover {
+    color: $brand-turq;
+  }
+}
+
+ul, ol {
+  margin-left: $pad;
+  margin-right: $pad;
+}
+
+form {
+  font-family: sans-serif;
+  input {
+    @include magic-bubble;
+    width: 30%;
+    height: 1em;
+    border: 1px solid $brand-yellow;
+    &:focus {
+      border: 1px solid $brand-turq;
+    }
+  }
+}
+
+button {
+  @include magic-bubble;
+  background-color: $brand-blue;
+  width: 30%;
+  &:hover {
+    color: $brand-white;
+    background-color: $brand-turq;
+  }
+}
+
+pre {
+  color: $brand-orange;
+}
