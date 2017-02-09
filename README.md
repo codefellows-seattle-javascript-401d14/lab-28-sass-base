@@ -27,7 +27,7 @@ Your lab directory must include
 * **.gitignore** -- with a robust gitignore
 * **package.json** -- with all dependencies and dev-dependencies 
 * **webpack.config.js** -- with all plugin and loader configurations
-* **app/** - a directory for helper modules
+* **app/** - a directory for your front end source
 * **app/index.html** -- app markup
 * **app/entry.js** -- app logic
 * **app/base.scss** -- app styles
