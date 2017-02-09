@@ -36,7 +36,8 @@ Your lab directory must include
 **All of the following will go in your app/base.scss**  
 * Write at least 2 `@mixin`s
 * Write a for loop when creating your h1 - h6 ratios :)
-* Make variables for the color scheme of your app **NEVER HARD CODE COLORS ONLY USE VARIABLES**
+* Make variables for the color scheme of your app 
+ * **NEVER HARD CODE COLORS ONLY USE VARIABLES**
 * Make a variable for the padding in your app
 * Write a reset useing the `*` selector
  * clear padding and margins
