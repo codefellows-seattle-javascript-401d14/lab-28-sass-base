@@ -1,65 +1,20 @@
-401 JS --  Lab 28 Sass
-===
+# Ken Lab 28
 
-## Submission Instructions
-  * Work in a fork of this repository
-  * Work in a branch on your fork
-  * Write all of your code in a directory named `lab-` + `<your name>` **e.g.** `lab-duncan`
-  * Submit a pull request to this repository
-  * Submit a link to your pull request on canvas
-  * Submit a question, observation, and how long you spent on canvas  
-  
-## Learning Objectives  
-* Students will learn how to write a css reset
-* Students will learn how to write a base stylesheet 
-* Students will learn how to write sass mixins
-* Students will learn how to write sass for loops
+##Mixins
 
-## Resources  
-* [Sass Guide](http://sass-lang.com/guide)
-* [Sass Reference Docs](http://sass-lang.com/documentation/file.SASS_REFERENCE.html)
+There are two mixins located in the base SASS.
 
-## Requirements  
-#### Configuration  
-<!-- list of files, configurations, tools, ect that are required -->
-Your lab directory must include  
-* **README.md** -- with a documention about your lab
-* **.gitignore** -- with a robust gitignore
-* **package.json** -- with all dependencies and dev-dependencies 
-* **webpack.config.js** -- with all plugin and loader configurations
-* **app/** - a directory for your front end source
-* **app/index.html** -- app markup
-* **app/entry.js** -- app logic
-* **app/base.scss** -- app styles
- 
-#### Feature Tasks  
-**All of the following will go in your app/base.scss**  
-* Write at least 2 `@mixin`s
-* Write a for loop when creating your h1 - h6 ratios :)
-* Make variables for the color scheme of your app 
- * **NEVER HARD CODE COLORS IN YOUR STYLES, ONLY USE VARIABLES**
-* Make a variable for the padding in your app
-* Write a reset useing the `*` selector
- * clear padding and margins
- * set everything to be width 100%
- * set font size, weight
- * clear form focus
- * clear list item style
- * clear text-decoration
- * set font color
-* Write Default styles for the following tags
- * html, body, p, pre, h1-h6, button, input, label, form, ul, ol, li, a
- 
-####  Documentation  
-* Write docs about the mixens you made and how they should be used
+  1. important-things
+  2. funny-things
 
-#### Testing  
-* none :) 
+###important-things
+  important-things should be used when you want to emphasize something. When using this selector the text will be displayed like follows:
+    + family: Courier
+    + size: 12px
+    + weight: bold
 
-## Rubric  
-* 2ps Configuration
-* 3pts Feature Tasks
-* 3pts Tests
-* 2pts Documentation
-
-<!-- links --> 
+###funny-things
+  funny-things should be used when there is something in your application that should be considered comical. funny-things will be displayed as follows:
+    + family: serif;
+    + size: 14px;
+    + weight: italic;

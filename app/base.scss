@@ -1,0 +1,61 @@
+*{
+  padding: 0px;
+  width: 100%;
+  font-size: 1em;
+  font-weight: normal;
+  color: #ff4;
+
+  &:focus {
+    outline:0;
+  }
+}
+
+
+$brand-primary: #1087FF;
+$brand-secondary: #03E84B;
+
+$brand-active: #9B03E8;
+$brand-focus: #FFF71F
+
+$brand-error: #FF2B03;
+$brand-success: #03E84B;
+
+
+$pad: 0.8em;
+
+@mixin important-things  {
+  font: {
+    family: Courier;
+    size: 12px;
+    weight: bold;
+  }
+}
+
+@mixin funny-things {
+  font:{
+    family: serif;
+    size: 14px;
+    weight: italic;
+
+  }
+
+}
+
+@for $i from 6 through 1 {
+  h#{$i} {
+
+  }
+}
+
+html, body{
+  position: relative;
+  width: 100%;
+  height: 100%auto;background-color: $brand-secondary;
+}
+
+body{
+  @include horizontal-center;
+  width: 906px;
+  height: auto;
+  background-color: $brand-primary;
+}
