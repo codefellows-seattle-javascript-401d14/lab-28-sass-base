@@ -1,0 +1,140 @@
+$brand-black: #000;
+$brand-darkblue: #000aaa;
+$brand-white: #fff;
+$brand-beige: #B2A59B;
+$brand-orange: #FF8019;
+$brand-aqua:#009AB2;
+$brand-sky:#A9F3FF;
+
+$brand-active:#a47;
+$brand-focus:#BEDD;
+$brand-error:#aAD;
+$brand-success:#FFE901;
+
+$pad: 0.7em;
+
+@mixin horizontal-center{
+  margin: 0 auto;
+}
+
+@mixin center-text {
+  margin: 0 auto;
+  text-align: center;
+}
+
+@mixin special-pad {
+  box-sizing: border-box;
+  padding: $pad;
+}
+
+@mixin bubble {
+  box-sizing: border-box;
+  padding:$pad;
+  border: 1px thin black;
+  border-radius: 0.4em;
+}
+
+@mixin highlight {
+  background-color: $brand-success;
+  color: $brand-darkblue;
+}
+
+//reset
+* {
+  position: static;
+  width:100%;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+  padding:0px;
+  font-size: 1em;
+  line-height: 1em;
+  color: $brand-black;
+  &:focus {
+    outline: 0;
+  }
+}
+
+html, body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  @include horizontal-center;
+  height:auto;
+  padding: $pad * 2;
+  background-color: $brand-beige;
+}
+
+body * {
+  margin-bottom: $pad;
+}
+
+@for $i from 6 through 1 {
+  h#{$i} {
+    @include center-text;
+    color:$brand-orange;
+    font-size: (8-$i) * 0.5em;
+    margin: $i/8 *0.5em;
+  }
+}
+
+p {
+  margin-top: $pad;
+  margin-bottom: $pad;
+  color:$brand-aqua;
+}
+
+a {
+  color:$brand-active;
+  font-weight: 300;
+  font-family: sans-serif;
+  &:hover {
+    @include highlight;
+  }
+}
+
+ul, ol {
+  @include center-text;
+  font-size: 1em;
+  line-height: 2em;
+  margin-left: $pad;
+  padding-left: $pad;
+}
+
+pre {
+  @include special-pad;
+  @include horizontal-center;
+  @include highlight;
+  padding: $pad * 2;
+  margin-bottom: $pad;
+  width: 30%;
+}
+
+form {
+  input {
+    @include bubble;
+    width: 20%;
+    border-radius: 0.8em;
+    margin: $pad *2;
+    &:focus {
+      border: 3px solid $brand-focus;
+    }
+  }
+}
+
+button {
+  @include bubble;
+  width: fit-content;
+  border: none;
+  background-color: $brand-sky;
+  color:$brand-black;
+  &:hover {
+    background-color: $brand-orange;
+  }
+  &:active {
+    background-color: $brand-active;
+    color: $brand-success;
+  }
+}
