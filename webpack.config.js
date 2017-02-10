@@ -4,7 +4,6 @@ const HTMLPlugin = require('html-webpack-plugin');
 const ExtractText = require('extract-text-webpack-plugin');
 
 module.exports = {
-  devtool: 'cheap-dolue-eval-source-map',
   entry: `${__dirname}/app/entry.js`,
   output: {
     path: `${__dirname}/build`,
