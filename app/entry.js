@@ -1,9 +1,9 @@
 'use strict';
 
-require('./base.scss');
+require('./css/base.scss');
 
 const angular = require('angular');
-angular.module('demoApp', [])
+angular.module('app', [])
 .component('app', {
   template: require('./app.html'),
   controller: ['$log', function($log){
